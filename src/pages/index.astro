@@ -1,32 +1,21 @@
 ---
 import { Hero } from "@modules/Hero";
 import Layout from "../layouts/Layout.astro";
-import { LogosSlider } from "@modules/LogosSlider";
-import { LeadTexts } from "@modules/LeadTexts";
-import { Image } from "@static/images";
-import { BoxOffers } from "@modules/BoxOffers";
-import { ContentSection } from "@modules/ContentSection";
-import { FadeIn } from "@utils/animations/FadeIn";
 ---
 
-<Layout title="Agency Aestro" description="YOUR META DESCRIPTION FOR SEO">
-    <main class="page-content">
+<Layout title="Bussiness loan in Tarakeshwar | Online loan in Tarakeshwar | Instant loan in Tarakeshwar" description="Get instant bussiness loan in Tarakeshwar at affordable interest rates. Apply now.">
+    <main class="page-content" >
         <Hero
             heroType="textImage"
             client:load
             content={{
-                title: `Agency Aestro - We are for you!`,
-                paragraph: `We will help grow your business lorem ipsum dolores quis nostru`,
+                title: `Fast & Easy business loans`,
+                paragraph: `No Collateral | Quick Approvals | Low Interest Rates`,
                 buttons: [
                     {
-                        link: "https://codexcode.store/themes/agency-aestro-template-page",
-                        text: "buy template - $14.99",
+                        link: "https://wa.me/917047864270",
+                        text: "Whatsapp",
                         variant: "secondary",
-                    },
-                    {
-                        link: "https://codexcode.store/contact",
-                        text: "contact us",
-                        variant: "primary",
                     },
                 ],
                 image: {
@@ -37,106 +26,5 @@ import { FadeIn } from "@utils/animations/FadeIn";
                 },
             }}
         />
-        <LogosSlider client:load />
-        <ContentSection
-            style={{
-                maxWidth: "600px",
-                margin: "0 auto",
-            }}
-        >
-            <FadeIn client:visible>
-                <h2>Why choose us?</h2>
-                <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco
-                </p>
-            </FadeIn>
-        </ContentSection>
-        <BoxOffers
-            client:load
-            boxes={[
-                {
-                    content: `
-                    <h2>+940 clients</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
-                },
-                {
-                    content: `
-                    <h2>+1000 projects</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
-                },
-                {
-                    content: `
-                    <h2>10 years experience</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
-                },
-            ]}
-        />
-        <LeadTexts
-            client:load
-            title="We offer"
-            contentText={[
-                {
-                    content: `
-                <h3>
-                    <b>lorem ipsum dolor sit ame</b> - lorem ipsum dolor sit ame lorem ipsum dolor sit ame
-                </h3>
-            `,
-                },
-                {
-                    content: `
-                <h3>
-                 <b>lorem ipsum dolor sit ame</b> - lorem ipsum dolor sit m dolor sitm dolor sit ame lorem ipsum dolor sit ame
-                </h3>
-            `,
-                },
-                {
-                    content: `
-                <h3>
-                    <b>lorem ipsum dolor sit ame</b> - lorem ipsum dolor sit m dolor sitm dolor
-                </h3>
-            `,
-                },
-                {
-                    content: `
-                <h3>
-                    <b>lorem ipsum dolor sit ame</b> - lorem ipsum dolor sit m dolor sitm dolor
-                </h3>
-            `,
-                },
-            ]}
-        />
-        <Hero
-            heroType="textImage"
-            client:load
-            content={{
-                switchPlaces: true,
-                title: `Our Agency help with lorem`,
-                paragraph: `lorem ipsum dolor sit amet, conse dolor sit amet, conse`,
-                image: {
-                    srcLocal: "heroImg",
-                    alt: "hero section image",
-                    width: 300,
-                    height: 300,
-                },
-            }}
-        />
-        <ContentSection>
-            <FadeIn client:load>
-                <h2>
-                    lorem ipsum dolor sit amet<br /> consectetur adipiscing elit.
-                    Sed
-                </h2>
-
-                <figure>
-                    <Image srcLocal="chart" alt="speed chart" />
-                </figure>
-            </FadeIn>
-        </ContentSection>
     </main>
 </Layout>

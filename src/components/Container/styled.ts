@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { MediaQuery } from "@styles/mediaQuery";
 
 export const StyledContainer = styled.div`
-    margin: 0 auto;
+    margin: 0px auto auto auto;
     padding: 0 20px;
     width: 100%;
 

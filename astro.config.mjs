@@ -9,6 +9,11 @@ const date = new Date().toISOString();
 // https://astro.build/config
 export default defineConfig({
     site: siteUrl + "/",
+	
+	 server: {
+        host: '0.0.0.0', // Expose to external networks (for Docker)
+        port: 4321       // Set the exposed port
+    },
 
     integrations: [
         react(),
